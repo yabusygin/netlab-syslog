@@ -1,0 +1,8 @@
+name: netlab-syslog-service
+services:
+  syslog:
+    build: ./build/
+    ports:
+      - protocol: udp
+        target: 514
+        published: 514
